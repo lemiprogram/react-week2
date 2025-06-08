@@ -68,7 +68,7 @@ function Login({pageCount,setPageCount,
         <div className="grid place-content-center h-[100vh]">
           <div className='card relative rounded-2xl flex flex-col justify-center '>
               
-              <div className="heading capitalize rounder text-2xl font-bold text-center pb-8" >{hasAccount?'login':"signUp"}</div>
+              <div className="heading capitalize rounder text-2xl font-bold text-center pb-8" >{!hasAccount?'login':"signUp"}</div>
               {
                 pageCount?
                   <button 
